@@ -76,10 +76,16 @@ header {
 }
 
 .p-simples{
-    text-indent: 30px;
-    margin-bottom: 10px;
+    text-indent: 20px;
+    margin-block-end: 10px;
 }
 
+#contratar_servico_text{
+    text-align:center;
+    color: rgb(192, 3, 3);
+    font-weight: bolder;
+    font-size: 1.3em;
+}
 
 #Contratar_servicos{
     width: 90vw;
@@ -90,8 +96,13 @@ header {
     flex-wrap: wrap;
 }
 
-
-#Contratar_servicos > div{
+.servico-text{
+    font-size: 1em;
+    font-weight:600;
+    text-align: center;
+    color:rgba(151, 74, 22, 0.842);
+}
+.conteiner_servicos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,7 +115,7 @@ header {
     margin: 10px;
 }
 
-#Contratar_servicos > div::before{
+.conteiner_servicos::before{
     content: "➔";
     position: relative;
     z-index: 2;
@@ -113,7 +124,7 @@ header {
 
 }
 
-#Contratar_servicos > div::after{
+.conteiner_servicos::after{
     content: "";
     position: relative;
     width: 100%;
@@ -124,7 +135,7 @@ header {
 }
 
 #Contratar_servicos > div > img{
-    width: 70%;
+    width: 60%;
     height: auto;
 }
 
