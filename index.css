@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.04em;
+}
+
+body{
+    background-color: floralwhite;
+}
+header {
+    height: 33vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.conteiner-header{
+    width: 15vh;
+    height: 15vh;
+    /*background-color: red;*/
+    border: azure 2px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conteiner-header > img {
+    width: 70%;
+    height: auto;
+}
+
+#header-titulo{
+    color: blanchedalmond;
+    font-size: 2em;
+}
+#span-header{
+    font-size: 1.3em;
+    color: blanchedalmond;
+}
+
+#infos-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Section-main{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+#titulo-main{
+    
+    text-align: center;
+    width: 90vw;
+    font-size: 1.5em;
+    margin-top: 20px;
+    color: rgb(192, 70, 0);
+}
+
+#subTitulo-main{
+    text-align: center;
+    color: rgb(192, 3, 3);
+    font-size: 1.3em;
+    margin: 20px;
+}
+
+.p-simples{
+    text-indent: 30px;
+    margin-bottom: 10px;
+}
+
+
+#Contratar_servicos{
+    width: 90vw;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#Contratar_servicos > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    background-color: rgb(97, 96, 96);
+    padding: 10px;
+    margin: 10px;
+}
+
+#Contratar_servicos > div::before{
+    content: "➔";
+    position: relative;
+    z-index: 2;
+    left: 0;
+
+}
+
+#Contratar_servicos > div::after{
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 20px;
+    top: -90%;
+    background-color: rgb(205, 107, 50);
+
+}
+
+#Contratar_servicos > div > img{
+    width: 70%;
+    height: auto;
+}
+
+
