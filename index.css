@@ -99,7 +99,7 @@ header {
     width: 200px;
     height: 300px;
     border-radius: 10%;
-    background-color: rgb(97, 96, 96);
+    background-color: rgba(126, 126, 126, 0.829);
     padding: 10px;
     margin: 10px;
 }
@@ -119,7 +119,7 @@ header {
     width: 100%;
     height: 20px;
     top: -91%;
-    background-color: rgb(205, 107, 50);
+    background-color: rgb(219, 112, 50);
 
 }
 
