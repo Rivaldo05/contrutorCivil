@@ -31,7 +31,7 @@ header {
 }
 
 .conteiner-header > img {
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
@@ -110,7 +110,7 @@ header {
     width: 200px;
     height: 300px;
     border-radius: 10%;
-    background-color: rgba(126, 126, 126, 0.829);
+    background-color: rgb(201, 199, 199);
     padding: 10px;
     margin: 10px;
 }
