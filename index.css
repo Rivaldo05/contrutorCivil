@@ -8,9 +8,7 @@
 
 body{
     background-color: floralwhite;
-    min-width: 100vw;
-    overflow-x: hidden;
-    
+    width: 100vw;
 }
 
 .flex-collum-center{
