@@ -201,7 +201,7 @@ footer{
 /*ANIMAÇÃO DOS CARDS COM JS*/
 [data-animeCard]{
     opacity: 0;
-    transition: .3s;
+    transition: .5s;
 }
 
 [data-animeCard="dir-left"]{
