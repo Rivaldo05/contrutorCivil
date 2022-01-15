@@ -1,12 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     font-size: 1.04em;
 }
 
 body{
     background-color: floralwhite;
+    min-width: 100vw;
+    overflow-x: hidden;
+    
 }
 
 .flex-collum-center{
@@ -18,7 +22,7 @@ body{
 
 header {
     height: 33vh;
-    width: 100vw;
+    min-width: 100vw;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -54,13 +58,6 @@ header {
     font-size: 1.3em;
     color: blanchedalmond;
 }
-/*
-#infos-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-*/
 
 #titulo-main{
     text-align: center;
@@ -114,16 +111,6 @@ header {
     margin: 10px;
 }
 
-/*
-.conteiner_servicos::before{
-    content: "➔";
-    position: relative;
-    z-index: 2;
-    left: 0;
-    animation: infinite setasAnim 0.5s alternate;
-
-}
-*/
 .conteiner_servicos::before{
     content: "";
     position: relative;
@@ -131,7 +118,6 @@ header {
     height: 20px;
     border-radius: 20px;
     background-color: rgb(219, 112, 50);
-
 }
 
 .conteiner_servicos > img{
@@ -201,7 +187,7 @@ footer{
 /*ANIMAÇÃO DOS CARDS COM JS*/
 [data-animeCard]{
     opacity: 0;
-    transition: .5s;
+    transition: .3s;
 }
 
 [data-animeCard="dir-left"]{
@@ -280,6 +266,14 @@ footer{
 }
 
 @media only screen and (min-width: 1080px) { 
+    .Contratar_servicos{
+        width: 60vw;
+    }
+
+
+}
+
+@media only screen and (min-width: 1200px) { 
     .Contratar_servicos{
         width: 90vw;
     }
