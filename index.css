@@ -7,6 +7,10 @@
 
 body{
     background-color: floralwhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 header {
     height: 33vh;
@@ -50,6 +54,7 @@ header {
     align-items: center;
 }
 
+
 #Section-main{
    
     display: flex;
@@ -57,10 +62,10 @@ header {
     justify-content: center;
     align-items: center;
     margin: 10px;
+    
 }
 
 #titulo-main{
-    
     text-align: center;
     width: 90vw;
     font-size: 1.5em;
@@ -87,7 +92,7 @@ header {
     font-size: 1.3em;
 }
 
-#Contratar_servicos{
+.Contratar_servicos{
     width: 90vw;
     margin-top: 30px;
     display: flex;
@@ -100,7 +105,7 @@ header {
     font-size: 1em;
     font-weight:600;
     text-align: center;
-    color:rgba(151, 74, 22, 0.842);
+    color:rgb(255, 255, 255);
 }
 .conteiner_servicos{
     display: flex;
@@ -110,11 +115,12 @@ header {
     width: 200px;
     height: 300px;
     border-radius: 10%;
-    background-color: rgb(201, 199, 199);
+    background-color: rgba(95, 50, 22, 0.8);
     padding: 10px;
     margin: 10px;
 }
 
+/*
 .conteiner_servicos::before{
     content: "➔";
     position: relative;
@@ -123,22 +129,45 @@ header {
     animation: infinite setasAnim 0.5s alternate;
 
 }
-
-.conteiner_servicos::after{
+*/
+.conteiner_servicos::before{
     content: "";
     position: relative;
     width: 100%;
     height: 20px;
-    top: -91%;
+    border-radius: 20px;
     background-color: rgb(219, 112, 50);
 
 }
 
-#Contratar_servicos > div > img{
+.conteiner_servicos > img{
     width: 60%;
     height: auto;
 }
 
+#pq_contratar{
+    background-color: rgb(255, 169, 119);
+    width: 100vw;
+}
+
+#pq_contratar > div {
+    height: 200px;
+}
+
+#pq_contratar > h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 10vh;
+}
 @keyframes setasAnim {
     from{
         transform: translateX(-10px);
