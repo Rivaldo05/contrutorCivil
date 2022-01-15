@@ -7,11 +7,15 @@
 
 body{
     background-color: floralwhite;
+}
+
+.flex-collum-center{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
+
 header {
     height: 33vh;
     width: 100vw;
@@ -20,6 +24,7 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    
 
 }
 
@@ -29,9 +34,7 @@ header {
     /*background-color: red;*/
     border: azure 2px solid;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    animation: HeaderAnim 1s ease-in ;
 }
 
 .conteiner-header > img {
@@ -39,6 +42,10 @@ header {
     height: auto;
 }
 
+#infos-header {
+    animation: HeaderAnim 0.5s ease;
+
+}
 #header-titulo{
     color: blanchedalmond;
     font-size: 2em;
@@ -47,20 +54,15 @@ header {
     font-size: 1.3em;
     color: blanchedalmond;
 }
-
+/*
 #infos-header{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
+*/
 
 #Section-main{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 10px;
     
 }
@@ -95,9 +97,7 @@ header {
 .Contratar_servicos{
     width: 90vw;
     margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -108,9 +108,6 @@ header {
     color:rgb(255, 255, 255);
 }
 .conteiner_servicos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     width: 200px;
     height: 300px;
@@ -148,9 +145,10 @@ header {
 #pq_contratar{
     background-color: rgb(255, 169, 119);
     width: 100vw;
+    margin-top: 30px;
 }
 
-#pq_contratar > div {
+#pq_contratar-div > div{
     height: 200px;
 }
 
@@ -161,17 +159,44 @@ header {
     margin: 20px;
 }
 
-
-
 footer{
     background-color: rgb(0, 0, 0);
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
 }
-@keyframes setasAnim {
+
+#conteiner-footer{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    animation: infinite buttonWpp .5s ease-in alternate;
+    border-radius: 50%;
+    background-color: rgb(255, 60, 0);
+
+}
+
+#conteiner-footer > a > img{
+    width: 95%;
+}
+@keyframes HeaderAnim {
     from{
-        transform: translateX(-10px);
+        opacity: 0;
+        transform: translateX(-30px);
     }to{
-        transform: translateX(10px);
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+@keyframes buttonWpp{
+    from{
+        transform: rotate(0deg);
+        opacity: 0.5;
+    }to{
+        transform: rotate(-30deg);
+        opacity: 1;
     }
 }
