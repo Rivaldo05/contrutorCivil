@@ -44,3 +44,13 @@ if(buscarElemento.length){
     animeScrool()
 })
 }
+
+
+/* encontrar elementos que causam o scrool x*/
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(document.querySelectorAll('*'), function (el) {
+  if (el.offsetWidth > docWidth) {
+    console.log(el);
+  }
+});
