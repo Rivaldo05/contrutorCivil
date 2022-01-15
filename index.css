@@ -79,6 +79,7 @@ header {
     margin-block-end: 10px;
     margin-left: 15px;
     margin-right: 15px;
+    text-align: center;
 }
 
 #contratar_servico_text{
@@ -145,7 +146,6 @@ header {
 
 #pq_contratar > p{
     width: 70vw;
-    text-align: center;
 }
 
 footer{
