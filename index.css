@@ -232,6 +232,13 @@ footer{
 }
 
 
+@media only screen and (max-width: 360px) { 
+    #contato-conteiner > span + span{
+        margin: 0px;
+    }
+}
+
+
 /*MIDIAS QUERYS*/
 @media only screen and (min-width: 600px) { 
     #header-titulo{
